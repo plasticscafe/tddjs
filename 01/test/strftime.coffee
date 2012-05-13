@@ -1,7 +1,7 @@
 should = require 'should'
 
 fs = require 'fs'
-eval fs.readFileSync 'strftime.js', 'utf-8'
+eval fs.readFileSync '01/strftime.js', 'utf-8'
 
 describe 'strftimeのテスト', ->
   date = new Date 2009, 11, 5
