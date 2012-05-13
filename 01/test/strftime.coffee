@@ -5,6 +5,8 @@ eval fs.readFileSync '01/strftime.js', 'utf-8'
 
 describe 'strftimeのテスト', ->
   date = new Date 2009, 11, 5
+  it 'strfitimeの定義', ->
+    date.strftime.should.be.ok
   it '年の取得', ->
     date.strftime('%Y').should.equal '2009'
   it '月の取得', ->

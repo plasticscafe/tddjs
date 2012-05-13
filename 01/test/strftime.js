@@ -9,6 +9,9 @@ eval(fs.readFileSync('01/strftime.js', 'utf-8'));
 describe('strftimeのテスト', function() {
   var date;
   date = new Date(2009, 11, 5);
+  it('strfitimeの定義', function() {
+    return date.strftime.should.be.ok;
+  });
   it('年の取得', function() {
     return date.strftime('%Y').should.equal('2009');
   });
