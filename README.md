@@ -1,4 +1,4 @@
 tddjs
 =====
 
-tddjs self-learning
+tddjs self-learning using coffee-script & mocha
